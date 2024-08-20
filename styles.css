@@ -1,3 +1,6 @@
+/* Link Quicksand font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 /* Global Styles */
 * {
   box-sizing: border-box;
@@ -48,8 +51,6 @@ div {
   border-radius: 2.25rem;
 }
 
-/* Link Quicksand font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 /* Classes */
 
