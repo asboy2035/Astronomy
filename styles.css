@@ -178,7 +178,7 @@ div {
   }
 
   #position, #moons, #distance, #temperature {
-    min-width: 100%;
+    min-width: 0;
   }
 
   #planetName {
