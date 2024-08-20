@@ -1,0 +1,198 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  font-family: 'Quicksand', sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  color: white;
+  background-color: black;
+  background-image: url('/Images/Background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+li svg {
+  margin-right: 10px;
+}
+
+span {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+div {
+  background-color: #2f2f2f71;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: rgba(50, 50, 50, 0.2) 0.125rem solid;
+  border-radius: 2.25rem;
+}
+
+/* Link Quicksand font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* Classes */
+
+.icon {
+  margin-right: 15px;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0.625rem;
+  right: 0;
+  width: 15.625rem;
+  height: fit-content;
+  color: #fff;
+  padding: 0.9rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: 0.1s ease-in-out;
+  border-radius: 2.25rem 0 0 2.25rem;
+  z-index: 10;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-button svg {
+  fill: #fff;
+}
+
+.sidebar-content {
+  margin-top: 3.75rem;
+  cursor: pointer;
+  border-radius: 1.25rem;
+}
+
+.collapsed {
+  right: -11.5rem;
+}
+
+
+#planetName {
+  margin: 0.625rem;
+  padding: 0.75rem;
+  width: fit-content;
+  height: fit-content;
+  font-size: xx-large;
+}
+
+#planetImage {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  max-width: 43.75rem;
+  width: calc(100vw - 2rem);
+  height: auto;
+}
+
+#info {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  padding: 0.9rem;
+  gap: 0.625rem;
+  height: calc(100vh - 30rem);
+  border-radius: 2.25rem 2.25rem 0 0;
+  width: 100vw;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.625rem;
+  flex-grow: 3;
+  height: 100%;
+  width: calc(100vh - 30rem);
+  background-color: transparent; /* Explicitly set to transparent */
+  border: none; /* Remove any border */
+  box-shadow: none; /* Remove any box-shadow */
+  backdrop-filter: none; /* Ensure no backdrop filter */
+  -webkit-backdrop-filter: none; /* Ensure no WebKit-specific backdrop filter */
+}
+
+#position, #moons, #distance, #temperature {
+  display: flex;
+  flex-direction: column;
+  /* flex-grow: 1; */
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.25rem;
+  padding: 0.625rem;
+  height: 100%;
+  overflow-y: auto;
+  min-width: 15rem;
+  text-align: center;
+}
+
+#description {
+  flex-grow: 1;
+  padding: 0.625rem;
+  min-width: 10rem;
+  height: 100%;
+  border-radius: 1.25rem;
+  overflow-y: auto;
+}
+
+@media (max-width: 800px) { 
+  #info {
+    flex-direction: column;
+  }
+
+  #grid {
+    width: 100%;
+  }
+
+  #position, #moons, #distance, #temperature {
+    min-width: 100%;
+  }
+
+  #planetName {
+    font-size: x-large;
+  }
+
+  #planetImage {
+    top: calc(50% - 12.5rem);
+  }
+}
+
+@media (max-height: 900px) {
+  #info {
+    height: calc(100vh - 20rem);
+  }
+
+  #description {
+    padding-right: 3.5rem;
+  }
+}

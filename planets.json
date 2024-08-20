@@ -1,0 +1,82 @@
+{
+  "Mercury": {
+    "name": "Mercury",
+    "description": "Mercury is the closest planet to the Sun and the smallest planet in our solar system. It's a rocky world with a cratered surface, similar to our Moon. Despite being so close to the Sun, it has no atmosphere to retain heat, making its temperatures swing wildly between scorching hot and freezing cold.",
+    "position": "1st",
+    "image_path": "/Images/Mercury.png",
+    "average_temperature_celsius": "167",
+    "average_temperature_fahrenheit": "332.6",
+    "moons": 0,
+    "distance_from_sun_km": "57.91 million"
+  },
+  "Venus": {
+    "name": "Venus",
+    "description": "Venus is the second planet from the Sun and is often called Earth's 'sister planet' because of their similar size and composition. However, Venus is wrapped in a thick, toxic atmosphere that traps heat, making it the hottest planet in our solar system. Its surface is covered with mountains, valleys, and thousands of volcanoes.",
+    "position": "2nd",
+    "image_path": "/Images/Venus.png",
+    "average_temperature_celsius": "464",
+    "average_temperature_fahrenheit": "867.2",
+    "moons": 0,
+    "distance_from_sun_km": "108.2 million"
+  },
+  "Earth": {
+    "name": "Earth",
+    "description": "Earth, our home planet, is the third planet from the Sun. It's the only planet known to support life, thanks to its atmosphere, liquid water, and ideal distance from the Sun. Earth's surface is a dynamic mix of oceans, continents, and a variety of ecosystems that sustain a diverse range of life forms.",
+    "position": "3rd",
+    "image_path": "/Images/Earth.png",
+    "average_temperature_celsius": "15",
+    "average_temperature_fahrenheit": "59",
+    "moons": 1,
+    "distance_from_sun_km": "149.6 million"
+  },
+  "Mars": {
+    "name": "Mars",
+    "description": "Mars, known as the Red Planet, is the fourth planet from the Sun. Its reddish appearance comes from iron oxide, or rust, on its surface. Mars has the largest volcano in the solar system, Olympus Mons, and a canyon that dwarfs Earth's Grand Canyon. Scientists are especially interested in Mars as it may have once had conditions suitable for life.",
+    "position": "4th",
+    "image_path": "/Images/Mars.png",
+    "average_temperature_celsius": "-60",
+    "average_temperature_fahrenheit": "-76",
+    "moons": 2,
+    "distance_from_sun_km": "227.9 million"
+  },
+  "Jupiter": {
+    "name": "Jupiter",
+    "description": "Jupiter is the fifth planet from the Sun and the largest in our solar system. It's a gas giant, made mostly of hydrogen and helium, with a mass more than twice that of all the other planets combined. Jupiter is famous for its Great Red Spot, a massive storm larger than Earth, and its many moons, including the potentially habitable Europa.",
+    "position": "5th",
+    "image_path": "/Images/Jupiter.png",
+    "average_temperature_celsius": "-110",
+    "average_temperature_fahrenheit": "-166",
+    "moons": 79,
+    "distance_from_sun_km": "778.5 million"
+  },
+  "Saturn": {
+    "name": "Saturn",
+    "description": "Saturn is the sixth planet from the Sun and is known for its spectacular ring system, the most extensive of any planet. Like Jupiter, Saturn is a gas giant primarily composed of hydrogen and helium. It also has a large number of moons, including Titan, which has a thick atmosphere and lakes of liquid methane.",
+    "position": "6th",
+    "image_path": "/Images/Saturn.png",
+    "average_temperature_celsius": "-140",
+    "average_temperature_fahrenheit": "-220",
+    "moons": 83,
+    "distance_from_sun_km": "1.43 billion"
+  },
+  "Uranus": {
+    "name": "Uranus",
+    "description": "Uranus is the seventh planet from the Sun and is unique in that it rotates on its side, making it look like it's rolling around the Sun. This gas giant has a bluish color due to the methane in its atmosphere and is known for its faint ring system. Uranus also has a very cold climate, with temperatures dropping as low as -224°C (-371°F).",
+    "position": "7th",
+    "image_path": "/Images/Uranus.png",
+    "average_temperature_celsius": "-195",
+    "average_temperature_fahrenheit": "-319",
+    "moons": 27,
+    "distance_from_sun_km": "2.87 billion"
+  },
+  "Neptune": {
+    "name": "Neptune",
+    "description": "Neptune, the eighth and farthest planet from the Sun, is known for its deep blue color and strong winds, the fastest in the solar system. It's a gas giant like Uranus, and also has a faint ring system. Neptune is home to several moons, including Triton, which has geysers that spew nitrogen gas.",
+    "position": "8th",
+    "image_path": "/Images/Neptune.png",
+    "average_temperature_celsius": "-200",
+    "average_temperature_fahrenheit": "-328",
+    "moons": 14,
+    "distance_from_sun_km": "4.5 billion"
+  }
+}
