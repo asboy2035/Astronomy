@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const temperatureElement = document.getElementById("temperature");
   const moonsElement = document.getElementById("moons").querySelector("p");
   const distanceElement = document.getElementById("distance").querySelector("p");
-  
+
   // Fetch the planets.json file
   fetch('/planets.json')
     .then(response => response.json())
@@ -43,8 +43,10 @@ document.addEventListener("DOMContentLoaded", () => {
           planetImageElement.setAttribute("src", planet.image_path);
           descriptionElement.textContent = planet.description;
           positionElement.textContent = planet.position;
-          temperatureElement.querySelector("p:nth-child(1)").textContent = `${planet.average_temperature_celsius}°C`;
-          temperatureElement.querySelector("p:nth-child(2)").textContent = `${planet.average_temperature_fahrenheit}°F`;
+          temperatureElement.innerHTML = `
+            <h3>Average Temperature</h3>
+            <p>${planet.average_temperature_celsius}°C</p>
+            <p>${planet.average_temperature_fahrenheit}°F</p>`;
           moonsElement.textContent = planet.moons;
           distanceElement.textContent = `${planet.distance_from_sun_km} km`;
         });
