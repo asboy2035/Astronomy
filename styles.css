@@ -126,6 +126,8 @@ div {
   height: calc(100vh - 30rem);
   border-radius: 2.25rem 2.25rem 0 0;
   width: 100vw;
+  max-height: 31.25rem;
+  max-width: 75rem;
 }
 
 #grid {
@@ -165,7 +167,7 @@ div {
   overflow-y: auto;
 }
 
-@media (max-width: 800px) { 
+@media (max-width: 50rem) { 
   #info {
     flex-direction: column;
   }
@@ -187,12 +189,18 @@ div {
   }
 }
 
-@media (max-height: 900px) {
+@media (max-height: 56.25rem) {
   #info {
     height: calc(100vh - 20rem);
   }
 
   #description {
     padding-right: 3.5rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  #info {
+    border-radius: 0 2.25rem 0 0;
   }
 }
