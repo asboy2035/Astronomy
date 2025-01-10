@@ -1,0 +1,14 @@
+{
+  "name": "Astronomer",
+  "short_name": "Astronomer",
+  "description": "A web app with information on our solar system!",
+  "icons": [
+    {
+      "src": "/Images/Astronomy-Icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone"
+}
