@@ -1,9 +1,15 @@
 // Cache name
-const CACHE_NAME = 'astronomer-cache-v1';
+const CACHE_NAME = 'astronomer-cache-v1.1';
 
 // Files to cache
 const FILES_TO_CACHE = [
-  '/'
+  '/Images',
+  '/app.js',
+  'styles.css',
+  'mobile.css',
+  'planets.json',
+  'index.html',
+  'check-pwa.js'
 ];
 
 // Install event
